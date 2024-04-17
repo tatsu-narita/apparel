@@ -53,3 +53,15 @@ window.addEventListener('load',() => {
         }
     );
 });
+
+/*
+画像ギャラリー
+================================================ */
+const mainImage = document.querySelector('.gallery-image img');
+const thumbImages = document.querySelector('.gallery-thumbnails img');
+
+thumbImages.forEach((thumbImage)=>{
+    thumbImage.addEventListener('mouseover', (event) => {
+        mainImage.src = event.target.src;
+    })
+});
