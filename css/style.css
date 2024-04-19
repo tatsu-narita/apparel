@@ -130,3 +130,7 @@ GALLERY
     left: 1rem;
     position: absolute;
 }
+.gallery-image img {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
