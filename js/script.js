@@ -63,5 +63,6 @@ const thumbImages = document.querySelector('.gallery-thumbnails img');
 thumbImages.forEach((thumbImage)=>{
     thumbImage.addEventListener('mouseover', (event) => {
         mainImage.src = event.target.src;
-    })
+        mainImage.animate({opacity: [o, 1]}, 500);
+    });
 });
