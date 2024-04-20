@@ -58,7 +58,9 @@ window.addEventListener('load',() => {
 画像ギャラリー
 ================================================ */
 const mainImage = document.querySelector('.gallery-image img');
-const thumbImages = document.querySelector('.gallery-thumbnails img');
+const thumbImages = document.querySelectorAll('.gallery-thumbnails img');
+
+console.log(thumbImages);
 
 thumbImages.forEach((thumbImage)=>{
     thumbImage.addEventListener('mouseover', (event) => {
