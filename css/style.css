@@ -82,6 +82,23 @@ LOADING
 }
 
 /*
+SLIDE MENU
+================================================ */
+/* 開閉ボタン */
+.btn-menu {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 4;
+    padding: .5rem 1rem;
+    border: 1px solid var(--brown);
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    transition: .4s;
+}
+
+/*
 HERO
 ================================================ */
 .hero {
