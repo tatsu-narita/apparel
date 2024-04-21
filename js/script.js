@@ -60,11 +60,9 @@ window.addEventListener('load',() => {
 const mainImage = document.querySelector('.gallery-image img');
 const thumbImages = document.querySelectorAll('.gallery-thumbnails img');
 
-console.log(thumbImages);
-
 thumbImages.forEach((thumbImage)=>{
     thumbImage.addEventListener('mouseover', (event) => {
         mainImage.src = event.target.src;
-        mainImage.animate({opacity: [o, 1]}, 500);
+        mainImage.animate({opacity: [0, 1]}, 500);
     });
 });
