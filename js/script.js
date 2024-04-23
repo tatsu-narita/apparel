@@ -66,3 +66,21 @@ thumbImages.forEach((thumbImage)=>{
         mainImage.animate({opacity: [0, 1]}, 500);
     });
 });
+
+/*
+スライドメニュー
+================================================ */
+const menuOpen = document.querySelector('#menu-open');
+const menuClose = document.querySelector('#menu-close');
+const menuPanel = document.querySelector('#menu-panel');
+const menuOptions = {
+    duration: 1400,
+    easing: 'ease',
+    fill: 'forwards',
+};
+
+//メニューを開く
+menuOpen.addEventListener('click', () => {
+    //console.log('メニューを開く');
+    menuPanel.animate({translate: ['100vw', 0]}, menuOptions);
+});
