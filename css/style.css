@@ -124,6 +124,7 @@ SLIDE MENU
     background-color: var(--brown);
     box-shadow: 0 0 2rem var(--brown);
     font-family: var(--oswald-font);
+    translate: 100vw;
 }
 .menu-list {
     list-style: none;
