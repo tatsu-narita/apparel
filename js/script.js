@@ -86,7 +86,7 @@ menuOpen.addEventListener('click', () => {
     menuPanel.animate({translate: ['100vw', 0]}, menuOptions);
 
     // リンクをひとつずつ順に表示
-    menuItems.forEach((menuItem) => {
+    menuItems.forEach((menuItem, index) => {
         //console.log(menuItem);
         menuItem.animate(
             {
