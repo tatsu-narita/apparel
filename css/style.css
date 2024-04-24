@@ -166,6 +166,21 @@ HERO
 }
 
 /*
+CONCEPT
+================================================ */
+.concept {
+    margin: 8rem 0;
+    background-image: linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 20%,
+        var(--light-grey) 20%,
+        var(--light-grey) 100%
+    );
+}
+
+
+/*
 GALLERY
 ================================================ */
 .gallery {
