@@ -110,3 +110,11 @@ menuClose.addEventListener('click', () =>{
         menuItem.animate({opacity: [1, 0]}, menuOptions);
     });
 });
+
+/*
+スクロールで要素を表示
+================================================ */
+// 監視対象が範囲内に現れたら実行する動作
+const animateFade = () => {
+    console.log('ふわっ');
+};
