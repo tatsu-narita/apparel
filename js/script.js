@@ -118,3 +118,9 @@ menuClose.addEventListener('click', () =>{
 const animateFade = () => {
     console.log('ふわっ');
 };
+
+// 監視設定
+const fadeObserver = new IntersectionObserver(animateFade);
+
+//.fadeinを下MM視するよう指示
+const fadeElements = document.querySelectorAll('.fadein');
