@@ -45,7 +45,7 @@ img {
     margin: 2rem 0;
     transition: .4s;
 }
-.fadein{
+.fadein {
     opacity: 0;
 }
 
@@ -178,7 +178,10 @@ CONCEPT
         var(--light-grey) 100%
     );
 }
-
+.concept p {
+    text-align: left;
+    margin-bottom: 2rem;
+}
 
 /*
 GALLERY
