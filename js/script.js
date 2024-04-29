@@ -115,7 +115,7 @@ menuClose.addEventListener('click', () =>{
 スクロールで要素を表示
 ================================================ */
 // 監視対象が範囲内に現れたら実行する動作
-const animateFade = (entries) => {
+const animateFade = (entries, obs) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             //console.log(entry.target);
@@ -131,6 +131,8 @@ const animateFade = (entries) => {
                     fill: 'forwards',
                 }
             );
+            //一度表示されたら監視をやめる
+            obs.unobserve(entry.target);
         }
     });
 };
