@@ -253,6 +253,17 @@ SHOP INFO
 DESKTOP SIZE
 ================================================ */
 @media(min-width: 800px) {
+/* SLIDE MENU */
+    .btn-menu:hover {
+        background-color: var(--light-green);
+    }
+    #menu-close:hover svg {
+        fill: var(--brown);
+    }
+    .menu-list a:hover {
+        transition: .4s;
+        color: var(--green);
+    }
 /* CONCEPT*/
     .concept {
         display: flex;
