@@ -253,6 +253,14 @@ SHOP INFO
 DESKTOP SIZE
 ================================================ */
 @media(min-width: 800px) {
+/* COMMON */
+    .title {
+        margin-bottom: 3rem;
+    }
+    .btn:hover {
+        color: var(--brown);
+        background: var(--light-green);
+    }
 /* SLIDE MENU */
     .btn-menu:hover {
         background-color: var(--light-green);
@@ -299,8 +307,8 @@ DESKTOP SIZE
         transition: .4s;
     }
 /* SHOP */
-.shop {
-    margin-top: 20rem;
-    height: 50rem;
-}
+    .shop {
+        margin-top: 20rem;
+        height: 50rem;
+    }
 }
